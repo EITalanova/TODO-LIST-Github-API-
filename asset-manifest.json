@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/todo-list-github-api/static/css/main.7acaea2f.css",
+    "main.js": "/todo-list-github-api/static/js/main.07d3183d.js",
+    "index.html": "/todo-list-github-api/index.html",
+    "main.7acaea2f.css.map": "/todo-list-github-api/static/css/main.7acaea2f.css.map",
+    "main.07d3183d.js.map": "/todo-list-github-api/static/js/main.07d3183d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7acaea2f.css",
+    "static/js/main.07d3183d.js"
+  ]
+}
