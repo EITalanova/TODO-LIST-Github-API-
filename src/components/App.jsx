@@ -1,16 +1,31 @@
+import { useState } from "react";
+import { nanoid } from "nanoid";
+
+
 export const App = () => {
+  const [todos, setTodos] = useState([]);
+  const [text, setText] = useState('');
+
+  const addTodo = () => {
+    if (text.trim().length) {
+      setTodos([
+        ...todos,
+        {
+          id: nanoid(),
+          text,
+          completed: false,
+
+        }
+
+      ])
+      setText('');
+    }
+  }
+
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
+    <div>
+      <input value={text} onChange={(e) => setText(e.target.value)} />
+      <button onClick={addTodo}></button>
     </div>
   );
 };
